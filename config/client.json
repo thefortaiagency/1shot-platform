@@ -1,0 +1,22 @@
+{
+  "client": {
+    "name": "1shot",
+    "projectName": "1shot-platform",
+    "industry": "business",
+    "createdAt": "2025-07-23T20:22:59.862Z"
+  },
+  "demo": {
+    "domain": "thefortaiagency.ai",
+    "subdomain": "1shot",
+    "url": "https://1shot.thefortaiagency.ai"
+  },
+  "production": {
+    "domain": null,
+    "status": "demo"
+  },
+  "metadata": {
+    "title": "1-Shot Platform Creation",
+    "description": "Revolutionary platform automation - created with a single command including OpenAI graphics, GitHub, Vercel, and DNS",
+    "style": "cosmic"
+  }
+}
