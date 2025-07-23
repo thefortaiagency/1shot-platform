@@ -1,0 +1,13 @@
+{
+  "client": "1shot",
+  "project": "1shot-platform",
+  "created": "2025-07-23T20:24:05.491Z",
+  "duration": "76 seconds",
+  "urls": {
+    "demo": "https://1shot.thefortaiagency.ai",
+    "vercel": "https://1shot-platform-odbo1r7kf-the-fort-ai-agency.vercel.app",
+    "github": "https://github.com/thefortaiagency/1shot-platform",
+    "production": "Not configured"
+  },
+  "path": "/Users/thefortob/Development/ACTIVE-PROJECTS/1shot-platform"
+}

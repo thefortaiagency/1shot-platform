@@ -1,0 +1,57 @@
+
+<svg width="800" height="400" viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="futureGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00FFFF;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#3B82F6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#8B5CF6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge> 
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="400" fill="url(#futureGrad)" opacity="0.1"/>
+  
+  <!-- Geometric patterns -->
+  <circle cx="150" cy="100" r="30" fill="none" stroke="#00FFFF" stroke-width="2" opacity="0.6">
+    <animate attributeName="r" values="30;40;30" dur="3s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="650" cy="300" r="40" fill="none" stroke="#3B82F6" stroke-width="2" opacity="0.4">
+    <animate attributeName="r" values="40;50;40" dur="4s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- Neural network nodes -->
+  <g stroke="#8B5CF6" stroke-width="1" opacity="0.3">
+    <line x1="100" y1="200" x2="200" y2="150"/>
+    <line x1="200" y1="150" x2="300" y2="200"/>
+    <line x1="300" y1="200" x2="400" y2="180"/>
+    <line x1="500" y1="220" x2="600" y2="180"/>
+    <line x1="600" y1="180" x2="700" y2="220"/>
+  </g>
+  
+  <!-- Main text -->
+  <text x="400" y="180" text-anchor="middle" fill="url(#futureGrad)" font-family="Arial, sans-serif" font-size="36" font-weight="bold" filter="url(#glow)">
+    WE ARE THE FUTURE
+  </text>
+  
+  <!-- Subtitle -->
+  <text x="400" y="220" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="16" opacity="0.8">
+    Revolutionary Platform Automation by Fort AI Agency
+  </text>
+  
+  <!-- Animated elements -->
+  <g opacity="0.6">
+    <rect x="50" y="350" width="60" height="4" fill="#00FFFF">
+      <animate attributeName="width" values="60;120;60" dur="2s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="690" y="50" width="4" height="40" fill="#3B82F6">
+      <animate attributeName="height" values="40;80;40" dur="2.5s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+</svg>
