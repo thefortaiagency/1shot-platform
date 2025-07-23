@@ -8,13 +8,13 @@ import fetch from 'node-fetch';
 import fs from 'fs';
 import path from 'path';
 
-// Use the OpenAI API key from environment or hardcoded
-const OPENAI_API_KEY = process.env.OPENAI_API_KEY || 'your-openai-api-key-here';
+// Use the OpenAI API key from environment only (secure)
+const OPENAI_API_KEY = process.env.OPENAI_API_KEY;
 
 async function generateFutureGraphic() {
   console.log('🎨 Generating "We Are The Future" graphic with OpenAI...');
   
-  if (!OPENAI_API_KEY || OPENAI_API_KEY === 'your-openai-api-key-here') {
+  if (!OPENAI_API_KEY) {
     console.log('⚠️  OpenAI API key not configured, creating placeholder...');
     
     // Create a placeholder SVG graphic

@@ -1,36 +1,42 @@
 import Image from 'next/image'
+import Navigation from './Navigation'
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section className="relative min-h-screen overflow-hidden">
       {/* Background */}
       <div className="absolute inset-0 bg-gradient-to-br from-slate-900 via-blue-900 to-slate-900" />
       
-      {/* Content */}
-      <div className="relative z-10 text-center max-w-6xl mx-auto px-6">
-        {/* Fort AI Agency Logo */}
-        <div className="mb-8">
-          <Image
-            src="/fort-ai-agency-logo-wide-truly-transparent.png"
-            alt="Fort AI Agency"
-            width={400}
-            height={100}
-            className="mx-auto"
-            priority
-          />
-        </div>
-        
-        {/* "We Are The Future" Graphic */}
-        <div className="mb-8">
-          <Image
-            src="/we-are-future.svg"
-            alt="We Are The Future"
-            width={800}
-            height={300}
-            className="mx-auto"
-            priority
-          />
-        </div>
+      {/* Fort AI Agency Logo - Prominently at the top */}
+      <div className="relative z-20 pt-8 pb-4 text-center">
+        <Image
+          src="/fort-ai-agency-logo-wide-truly-transparent.png"
+          alt="Fort AI Agency"
+          width={500}
+          height={125}
+          className="mx-auto drop-shadow-2xl"
+          priority
+        />
+      </div>
+      
+      {/* Navigation below logo */}
+      <Navigation />
+      
+      {/* Main Content */}
+      <div className="relative z-10 flex items-center justify-center min-h-[calc(100vh-200px)]">
+        <div className="text-center max-w-6xl mx-auto px-6">
+          
+          {/* "We Are The Future" AI-Generated Graphic */}
+          <div className="mb-8">
+            <Image
+              src="/we-are-future-ai.png"
+              alt="We Are The Future - AI Generated"
+              width={600}
+              height={600}
+              className="mx-auto rounded-2xl shadow-2xl"
+              priority
+            />
+          </div>
         
         <h1 className="text-4xl md:text-6xl font-bold mb-6 text-white">
           <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-cyan-400">
@@ -92,6 +98,7 @@ export default function Hero() {
           <p className="text-sm text-blue-300">
             URL: https://1shot.thefortaiagency.ai • Powered by Fort AI Agency Platform Automation
           </p>
+        </div>
         </div>
       </div>
     </section>
