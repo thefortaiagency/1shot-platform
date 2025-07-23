@@ -26,16 +26,37 @@ export default function Hero() {
       <div className="relative z-10 flex items-center justify-center min-h-[calc(100vh-200px)]">
         <div className="text-center max-w-6xl mx-auto px-6">
           
-          {/* "We Are The Future" AI-Generated Graphic */}
-          <div className="mb-8">
-            <Image
-              src="/we-are-future-ai.png"
-              alt="We Are The Future - AI Generated"
-              width={600}
-              height={600}
-              className="mx-auto rounded-2xl shadow-2xl"
-              priority
-            />
+          {/* "We Are The Future" Section with AI Background */}
+          <div className="mb-8 relative">
+            {/* AI-Generated Background */}
+            <div className="relative">
+              <Image
+                src="/we-are-future-ai.png"
+                alt="AI Generated Future Technology Background"
+                width={800}
+                height={400}
+                className="mx-auto rounded-2xl shadow-2xl opacity-80"
+                priority
+              />
+              {/* Text Overlay */}
+              <div className="absolute inset-0 flex items-center justify-center">
+                <div className="text-center">
+                  <h2 className="text-4xl md:text-6xl font-black text-white drop-shadow-2xl">
+                    <span className="bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 via-white to-blue-400">
+                      WE ARE THE
+                    </span>
+                  </h2>
+                  <h2 className="text-5xl md:text-7xl font-black text-white drop-shadow-2xl mt-2">
+                    <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 via-cyan-400 to-white">
+                      FUTURE
+                    </span>
+                  </h2>
+                  <p className="text-lg md:text-xl text-cyan-300 font-semibold mt-4 drop-shadow-lg">
+                    Fort AI Agency • Revolutionary Platform Automation
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         
         <h1 className="text-4xl md:text-6xl font-bold mb-6 text-white">

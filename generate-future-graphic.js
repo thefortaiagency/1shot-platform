@@ -82,7 +82,7 @@ async function generateFutureGraphic() {
   }
   
   try {
-    const prompt = "Futuristic digital artwork showing 'WE ARE THE FUTURE' with technological elements, circuit patterns, holographic effects, neon blue and cyan colors, abstract tech background, modern and cutting-edge design, no text needed in image, professional tech company aesthetic";
+    const prompt = "Professional technology background image, clean futuristic design, holographic blue and cyan glowing circuits, geometric patterns, digital matrix style, dark background with bright blue accents, high-tech corporate aesthetic, abstract tech elements, no text or letters in the image, perfect for overlaying text, sleek modern design, technology company branding background";
     
     const response = await fetch('https://api.openai.com/v1/images/generations', {
       method: 'POST',
